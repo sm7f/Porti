@@ -5,10 +5,9 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import { motion} from 'framer-motion'
 import { fadeIn } from '../variants'
-import { MouseParallaxContainer,MouseParallaxChild,} from 'react-parallax-mouse'
-
-import Habilidades from "../components/Habilidades";
+import Intro from "../components/Intro"
 import Carousel from "../components/Carousel";
+import Habilidades from "../components/Habilidades";
 import deved from "../public/portfoto.png";
 import Image from "next/image";
 
@@ -27,7 +26,7 @@ export default function Home() {
           <nav className="py-3 mb-8 flex justify-between dark:text-white">
             <h1 className="font-Roboto_Mono text-xl bg-red-500 text-white py-3 px-4 rounded cursor-pointer">
               <Link  href={'https://www.youtube.com/channel/UCpKC6cfaRhoKr2k966yCf1w'}>
-                <RiYoutubeLine/>
+                <RiYoutubeLine className="shadow-lg"/>
               </Link>
             </h1>
             <ul className="flex items-center">
@@ -47,7 +46,7 @@ export default function Home() {
               variants={fadeIn('down', 0.4)} initial='hidden' animate='show' exit='hidden'
               className="text-center p-10 py-2 bg-cover">
 
-            <h2 className="text-5xl py-2 text-cyan-500 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl py-2  text-cyan-500 font-medium dark:text-teal-400 md:text-6xl">
               Herberth Amorim
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -59,7 +58,7 @@ export default function Home() {
               </p>
             <div className=" cursor-pointer text-5xl flex justify-center gap-16 py-3 text-white-100 dark:text-gray-400">
               <Link href={'https://www.instagram.com/heberthamorim/'}>
-                <RiInstagramLine/>
+                <RiInstagramLine />
               </Link>
               <Link href={'https://www.linkedin.com/in/herberth-amorim-6883321a0/'}>
                 <RiLinkedinLine />
@@ -68,17 +67,13 @@ export default function Home() {
                 <RiGithubFill />
               </Link>
             </div>
-                <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave className="flex-1">
-                <MouseParallaxChild factorX={0.2} factorY={0.3}>
             <div 
               className="mx-auto rounded-full w-80 h-80 relative overflow-hidden mt-30 md:h-50 md:w-50">
               <Image src={deved} layout="fill" objectFit="cover" />     
             </div>
-                </MouseParallaxChild>
-                </MouseParallaxContainer>
 
              {/* Carousel */}    
-
+            <Intro></Intro>
           </motion.div>
         </section>
         <Habilidades></Habilidades>
@@ -86,18 +81,12 @@ export default function Home() {
           <div className="shadow-lg p-10 rounded-xl my-10  bg-white dark:bg-white">
             <h3 className="text-3xl py-1  dark: text-gray-800  ">Projetos</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-800">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+
+              Meus projetos podem ser explorados em detalhes em meu perfil no <span className="text-teal-500"> GitHub. </span>
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800  dark:text-gray-800">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
-            </p>
+            <Carousel></Carousel>
           </div>
+          
           
         </section>
       </main>

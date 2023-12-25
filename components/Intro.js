@@ -3,19 +3,21 @@ import Slider from 'react-slick';
 import { MouseParallaxContainer,MouseParallaxChild,} from 'react-parallax-mouse'
 import Image from "next/image";
 
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import pg1 from "../public/pg1.png"
-import login from "../public/login.png"
-import site from "../public/site.png"
-import art from "../public/art.png"
+import landing from "../public/landing.png"
+import projetos from "../public/projetos.png"
+import de from "../public/de.png"
+import contato from "../public/contato.png"
 
 
-const Carousel = () => {
+
+const Intro = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 5000,
     slidesToShow: 3,
     slidesToScroll: 2,
     autoplay: true,
@@ -27,32 +29,30 @@ const Carousel = () => {
         <Slider {...settings}>
                 <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
                 <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
-            <Image src={pg1} alt="Imagem 1" />
+        <div className="font-sans backdrop-blur-mdbackdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white  "> <span>LANDING PAGE </span>
         </div>
                 </MouseParallaxChild>
                 </MouseParallaxContainer>
 
                 <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
                 <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
-        <Image src={login} alt="Imagem 2" />
+        <div className="font-sans backdrop-blur-mdbackdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white "> <span classname> PROJETOS </span>
         </div>
                 </MouseParallaxChild>
                 </MouseParallaxContainer>
 
                 <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave >
                 <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
-        <Image src={art} alt="Imagem 2" />
+        <div className="font-sans backdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white "> <span classname> DESIGN </span>
+        
         </div>
                 </MouseParallaxChild>
                 </MouseParallaxContainer>
 
                 <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
                 <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
-        <Image src={site} alt="Imagem 2" />
+        <div className="font-sans backdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white "> <span classname> CONTATO </span>
+        
         </div>
                 </MouseParallaxChild>
                 </MouseParallaxContainer>
@@ -62,4 +62,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Intro;
