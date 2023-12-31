@@ -16,7 +16,7 @@ const Intro = () => {
     dots: false,
     infinite: true,
     speed: 5000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 5000, // ajuste o intervalo de tempo desejado em milissegundos
@@ -27,21 +27,31 @@ const Intro = () => {
         <Slider {...settings}>
                 <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
                 <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className="font-sans backdrop-blur-mdbackdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white  "> <span>LANDING PAGE </span>
+        <div className="font-sans backdrop-blur-mdbackdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white  "> <span>LANDING PAGE</span>
         </div>
                 </MouseParallaxChild>
                 </MouseParallaxContainer>
 
                 <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
                 <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className="font-sans backdrop-blur-mdbackdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white "> <span classname> PROJETOS </span>
+        <div className="font-sans backdrop-blur-mdbackdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white "> <span classname>PROJETOS</span>
         </div>
                 </MouseParallaxChild>
                 </MouseParallaxContainer>
 
                 <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave >
                 <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className="font-sans backdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white "> <span classname> DESIGN </span>
+                <Link href={'https://docs.google.com/document/d/1xNl4W_nRoIoB6vRdQHO35PvDrAxecrfBR1o0PD0xA6M/edit?usp=sharing'}>
+        <div className="font-sans backdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white "> <span classname>CURRICULO</span>
+        
+        </div>
+                </Link>
+                </MouseParallaxChild>
+                </MouseParallaxContainer>
+
+                <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave >
+                <MouseParallaxChild factorX={0.2} factorY={0.3}>
+        <div className="font-sans backdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white "> <span classname>DESIGN</span>
         
         </div>
                 </MouseParallaxChild>
