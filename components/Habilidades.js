@@ -30,7 +30,7 @@ const Habilidades = () => {
       {/*Coluna 1*/}
           <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave className="flex-1">
           <MouseParallaxChild factorX={0.2} factorY={0.3}>
-          <div className="flex-1 m-4 text-center shadow-lg p-10 rounded-xl my-10 bg-white dark:bg-white ">
+          <div className="flex-1 text-center p-10 my-10 shadow-lg rounded-xl m-4 bg-white dark:bg-white ">
             <h3 className="text-lg font-medium pt-8 pb-2  ">
             Landing Page
             </h3>

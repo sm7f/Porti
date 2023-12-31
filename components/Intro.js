@@ -1,17 +1,13 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { MouseParallaxContainer,MouseParallaxChild,} from 'react-parallax-mouse'
-import Image from "next/image";
 import Link from 'next/link';
 import Navigation from '../components/Navigation';
 
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import landing from "../public/landing.png"
-import projetos from "../public/projetos.png"
-import de from "../public/de.png"
-import contato from "../public/contato.png"
+
 
 
 
