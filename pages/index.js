@@ -9,7 +9,7 @@ import Intro from "../components/Intro"
 import Carousel from "../components/Carousel";
 import Habilidades from "../components/Habilidades";
 import deved from "../public/portfoto.png";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 
 
@@ -70,7 +70,13 @@ export default function Home() {
             </div>
             <div 
               className="mx-auto rounded-full w-80 h-80 relative overflow-hidden mt-30 md:h-50 md:w-50">
-              <Image src={deved} layout="fill" objectFit="cover" />     
+              <Image
+                src={deved}
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "cover"
+                }} />     
             </div>
 
              {/* Carousel */}    

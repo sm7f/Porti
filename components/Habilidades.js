@@ -1,7 +1,7 @@
 import React from 'react';
 import { MouseParallaxContainer,MouseParallaxChild,} from 'react-parallax-mouse'
 import { fadeIn } from '../variants'
-import Image from "next/legacy/image";
+import Image from "next/image";
 import next from "../public/next.webp";
 import react from "../public/react.png";
 import python from "../public/python.png";
@@ -36,9 +36,33 @@ const Habilidades = () => {
             </h3>
             <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2"></div>
             <h4 className="py-4 text-teal-600">Ferramentas</h4>
-            <Image src={next} width={100} height={100} className="inline-block align-baseline p-4"/>
-            <Image src={react} width={100} height={100} className="inline-block align-baseline p-4"/>
-            <Image src={tail} width={100} height={100} className="inline-block align-baseline p-4"/>
+            <Image
+              src={next}
+              width={100}
+              height={100}
+              className="inline-block align-baseline p-4"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
+            <Image
+              src={react}
+              width={100}
+              height={100}
+              className="inline-block align-baseline p-4"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
+            <Image
+              src={tail}
+              width={100}
+              height={100}
+              className="inline-block align-baseline p-4"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             
           </div> 
           </MouseParallaxChild>
@@ -55,9 +79,33 @@ const Habilidades = () => {
                 className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
             </div>
             <h4 className="py-4 text-teal-600">Ferramentas</h4>
-            <Image src={python}  width={100} height={100} className="inline-block align-baseline p-4"/>
-            <Image src={postgre}  width={100} height={100} className="inline-block align-baseline p-4"/>
-            <Image src={aws}  width={100} height={100} className="inline-block align-baseline p-4"/>
+            <Image
+              src={python}
+              width={100}
+              height={100}
+              className="inline-block align-baseline p-4"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
+            <Image
+              src={postgre}
+              width={100}
+              height={100}
+              className="inline-block align-baseline p-4"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
+            <Image
+              src={aws}
+              width={100}
+              height={100}
+              className="inline-block align-baseline p-4"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           </MouseParallaxChild>
           </MouseParallaxContainer>
@@ -72,15 +120,38 @@ const Habilidades = () => {
             <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
             </div>
             <h4 className="py-4 text-teal-600">Ferramentas</h4>
-            <Image src={ps} width={100} height={100} className="inline-block align-baseline p-4"/>
-            <Image src={figma} width={100} height={100} className="inline-block align-baseline p-4"/>
-            <Image src={qt} width={100} height={100} className="inline-block align-baseline p-4"/>
+            <Image
+              src={ps}
+              width={100}
+              height={100}
+              className="inline-block align-baseline p-4"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
+            <Image
+              src={figma}
+              width={100}
+              height={100}
+              className="inline-block align-baseline p-4"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
+            <Image
+              src={qt}
+              width={100}
+              height={100}
+              className="inline-block align-baseline p-4"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           </MouseParallaxChild>
           </MouseParallaxContainer>
         </div>    
   </section>
-
   );
 };
 

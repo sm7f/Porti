@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { MouseParallaxContainer,MouseParallaxChild,} from 'react-parallax-mouse'
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -23,42 +23,66 @@ const Carousel = () => {
   };
 
   return (
-    <div >
-        <Slider {...settings}>
-                <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
-                <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
-            <Image src={pg1} alt="Imagem 1" />
-        </div>
-                </MouseParallaxChild>
-                </MouseParallaxContainer>
+          <div >
+              <Slider {...settings}>
+                      <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
+                      <MouseParallaxChild factorX={0.2} factorY={0.3}>
+              <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
+                  <Image
+                          src={pg1}
+                          alt="Imagem 1"
+                          style={{
+                                  maxWidth: "100%",
+                                  height: "auto"
+                          }} />
+              </div>
+                      </MouseParallaxChild>
+                      </MouseParallaxContainer>
 
-                <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
-                <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
-        <Image src={login} alt="Imagem 2" />
-        </div>
-                </MouseParallaxChild>
-                </MouseParallaxContainer>
+                      <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
+                      <MouseParallaxChild factorX={0.2} factorY={0.3}>
+              <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
+              <Image
+                      src={login}
+                      alt="Imagem 2"
+                      style={{
+                              maxWidth: "100%",
+                              height: "auto"
+                      }} />
+              </div>
+                      </MouseParallaxChild>
+                      </MouseParallaxContainer>
 
-                <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave >
-                <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
-        <Image src={art} alt="Imagem 2" />
-        </div>
-                </MouseParallaxChild>
-                </MouseParallaxContainer>
+                      <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave >
+                      <MouseParallaxChild factorX={0.2} factorY={0.3}>
+              <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
+              <Image
+                      src={art}
+                      alt="Imagem 2"
+                      style={{
+                              maxWidth: "100%",
+                              height: "auto"
+                      }} />
+              </div>
+                      </MouseParallaxChild>
+                      </MouseParallaxContainer>
 
-                <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
-                <MouseParallaxChild factorX={0.2} factorY={0.3}>
-        <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
-        <Image src={site} alt="Imagem 2" />
-        </div>
-                </MouseParallaxChild>
-                </MouseParallaxContainer>
+                      <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
+                      <MouseParallaxChild factorX={0.2} factorY={0.3}>
+              <div className=" shadow-lg p-2 rounded-xl m-4 bg-white dark:bg-white ">
+              <Image
+                      src={site}
+                      alt="Imagem 2"
+                      style={{
+                              maxWidth: "100%",
+                              height: "auto"
+                      }} />
+              </div>
+                      </MouseParallaxChild>
+                      </MouseParallaxContainer>
 
-        </Slider>
-    </div>
+              </Slider>
+          </div>
   );
 };
 
