@@ -12,6 +12,7 @@ import deved from "../public/portfoto.png";
 import Image from "next/image";
 
 
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
@@ -86,8 +87,6 @@ export default function Home() {
             </p>
             <Carousel></Carousel>
           </div>
-          
-          
         </section>
       </main>
     </div>

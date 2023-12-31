@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import { MouseParallaxContainer,MouseParallaxChild,} from 'react-parallax-mouse'
 import Image from "next/image";
+import Link from 'next/link';
+import Navigation from '../components/Navigation';
 
 
 import 'slick-carousel/slick/slick.css';
@@ -51,9 +53,12 @@ const Intro = () => {
 
                 <MouseParallaxContainer globalFactorX={0.4} globalFactorY={0.3} resetOnLeave>
                 <MouseParallaxChild factorX={0.2} factorY={0.3}>
+                <Link href="/contato">
         <div className="font-sans backdrop-opacity-25 shadow-lg p-6 rounded-3xl m-4 w-30 h-20 bg-white dark:bg-white "> <span classname> CONTATO </span>
-        
+
+        <Navigation></Navigation>
         </div>
+                </Link>
                 </MouseParallaxChild>
                 </MouseParallaxContainer>
 

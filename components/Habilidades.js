@@ -10,6 +10,7 @@ import aws from "../public/aws.png";
 import ps from "../public/ps.png";
 import figma from "../public/figma.png";
 import qt from "../public/qt.png";
+import tail from "../public/tail.png";
 
 
 const Habilidades = () => {
@@ -19,7 +20,7 @@ const Habilidades = () => {
       <h3 className="text-3xl py-1 dark:text-gray-800 ">Sobre</h3>
           <MouseParallaxContainer globalFactorX={0.5} globalFactorY={0.4} resetOnLeave className="flex-1">
           <MouseParallaxChild factorX={0.1} factorY={0.1}>
-      <p className="text-xl py-2 leading-8  dark:text-gray-800">
+      <p className="text-base py-2 leading-8  dark:text-gray-800">
          Desde o início da minha trajetória como <span className="text-teal-500"> Desenvolvedor </span> e <span className="text-teal-500"> Designer </span>, tenho investido meu tempo em projetos para aprimorar habilidades em desenvolvimento, design gráfico e <span className="text-teal-500"> edição de vídeos.</span> As atividades não apenas atendem às minhas demandas do dia a dia e desafios profissionais, mas também proporcionam momentos de entretenimento.
       </p>
           </MouseParallaxChild>
@@ -37,6 +38,7 @@ const Habilidades = () => {
             <h4 className="py-4 text-teal-600">Ferramentas</h4>
             <Image src={next} width={100} height={100} className="inline-block align-baseline p-4"/>
             <Image src={react} width={100} height={100} className="inline-block align-baseline p-4"/>
+            <Image src={tail} width={100} height={100} className="inline-block align-baseline p-4"/>
             
           </div> 
           </MouseParallaxChild>
