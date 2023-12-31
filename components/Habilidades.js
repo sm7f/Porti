@@ -1,7 +1,7 @@
 import React from 'react';
 import { MouseParallaxContainer,MouseParallaxChild,} from 'react-parallax-mouse'
 import { fadeIn } from '../variants'
-import Image from "next/image";
+import Image from "next/legacy/image";
 import next from "../public/next.webp";
 import react from "../public/react.png";
 import python from "../public/python.png";

@@ -9,7 +9,7 @@ import Intro from "../components/Intro"
 import Carousel from "../components/Carousel";
 import Habilidades from "../components/Habilidades";
 import deved from "../public/portfoto.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 
 

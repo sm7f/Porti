@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { MouseParallaxContainer,MouseParallaxChild,} from 'react-parallax-mouse'
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
